@@ -5,7 +5,7 @@ import { CircleFacebookIcon, CircleInstagramIcon, CircleTikTokIcon, Logo } from 
 const Footer = () => {
     return (
         <React.Fragment>
-            <footer className='px-[45px] bg-[#F5EEE8] '>
+            <footer className='px-[45px] bg-[#FFFFFF] '>
                 <div className='flex justify-between pt-[56px] pb-[92px]'>
                     <div className=''>
                         <Link to={'/'}>
