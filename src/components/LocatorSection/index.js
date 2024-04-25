@@ -7,7 +7,7 @@ import {ArrowUpIcon} from "../../assets/icons"
 const LocatorSection = () => {
     return (
         <section>
-            <div className='max-w-[1350px] h-[389px] mx-auto my-[120px]  bg-[#F5EEE8] rounded-[32px] flex justify-between'>
+            <div className='max-w-[1350px]  mx-auto my-[120px]  bg-[#F5EEE8] rounded-[32px] flex justify-between'>
                 <div className='ml-[48px] pt-[42px]'>
                     <p className='text-[35px] font-[600]'>
                         Work with a locator and  earn up to <span className='text-[#FF6525] text-[35px] font-[600]'>$450</span>
@@ -26,10 +26,10 @@ const LocatorSection = () => {
                         </svg>
                         </span>We schedule your appointments <span className='text-[16px] font-[500] text-[#FF6525]'>- FREE!</span></li>
                     </ul>
-                    <button className='py-[18.5px] px-[32px] flex gap-[4px] bg-[#FF6525] rounded-[99px] text-[16px] text-[#FEFEFE] font-[600] text-center '><span><ArrowUpIcon/></span>Get Recommendations</button>
+                    <button className='py-[18.5px] mb-[40px] px-[32px] flex gap-[4px] bg-[#FF6525] rounded-[99px] text-[16px] text-[#FEFEFE] font-[600] text-center '><span><ArrowUpIcon/></span>Get Recommendations</button>
                 </div>
                 <div className='relative w-full h-full'>
-                    <img className='absolute top-[-45px] right-0 w-[565px] h-[434px] pr-[77.87px]' src={ImageTower} alt='' />
+                    <img className='absolute top-[-27px] right-0 w-[565px] h-[434px] pr-[77.87px]' src={ImageTower} alt='' />
                 </div>
             </div>
         </section>

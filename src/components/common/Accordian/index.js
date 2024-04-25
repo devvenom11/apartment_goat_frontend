@@ -17,7 +17,7 @@ const Accordian = ({question,answer}) => {
           onClick={() => setOpenIndex (!openIndex)}
         >
           <p className="font-[500] text-[16px] leading-[20.8px] text-[#22223B]">{question}</p>
-          {openIndex ? <SheveronUp /> : <SheveronDown />}
+          {openIndex ? <SheveronDown /> :  <SheveronUp /> }
         </div>
         {openIndex && <p className="text-left mt-[10px] font-[300] text-[16px] leading-[24px]">{answer}</p>}
       </div>

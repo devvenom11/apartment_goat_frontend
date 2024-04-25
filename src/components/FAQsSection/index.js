@@ -50,7 +50,7 @@ const FaqsSection = () => {
   ];
   return (
     <section className="">
-      <div className="bg-[rgb(186,218,249)] max-w-[1442px] mx-auto  ">
+      <div className="bg-[rgb(186,218,249)] px-[45px]  ">
         <div className="flex pt-[120px] pb-[110px] justify-between gap-[221.28px] pl-[45px] pr-[74px]">
           <div>
             <h1 className="text-[48px] font-[600] leading-[62.4px] mb-[52px]">
