@@ -6,7 +6,7 @@ const HeadingSection = ({ light = false, children, heading }) => {
             <div className='max-w-[485px]'>
                 <h2 className={`text-[48px] leading-[55px] font-semibold ${light ? "text-white" : "text-[#22223B]"}`}>{heading}</h2>
             </div>
-            <div className=''>
+            <div className='md:block hidden'>
                 {children}
             </div>
         </section>
