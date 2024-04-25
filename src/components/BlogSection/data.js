@@ -1,5 +1,5 @@
 
-    import Blog from "../../assets/landingPage/blog_img(1).png"
+    import Blog from "../../assets/landingPage/Rectangle 19288.png"
     import Blog2 from "../../assets/landingPage/Rectangle 19288(2).png"
     import Blog3 from "../../assets/landingPage/Rectangle 19288(3).png"
     import Blog4 from "../../assets/landingPage/Rectangle 19288(4).png"

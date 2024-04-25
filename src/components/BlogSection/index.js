@@ -18,7 +18,6 @@ const BlogSection = () => {
             </div>
             <div className='grid grid-cols-4 gap-[15px]'>
                 {data?.map((item)=>{
-                    console.log("item here >>>>",item)
                     return(
                         
                         <BlogCard title={item?.title} image={item?.img}/>

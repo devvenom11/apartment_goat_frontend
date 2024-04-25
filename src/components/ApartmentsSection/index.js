@@ -4,6 +4,7 @@ import Button from '../common/Button'
 import { ArrowUpIcon } from '../../assets/icons'
 import BlogCard from '../common/BlogCard'
 import Blog from "../../assets/landingPage/blog_img.png"
+import data from './data'
 
 const ApartmentsSection = () => {
     return (
@@ -14,7 +15,14 @@ const ApartmentsSection = () => {
                 </HeadingSection>
             </div>
             <div className='grid grid-cols-4 gap-[15px]'>
-                <BlogCard title='The Top 10 Lofts in  Chicago' image={Blog} />
+            {data?.map((item)=>{
+                    console.log("item here >>>>",item)
+                    return(
+                        
+                        <BlogCard title={item?.title} image={item?.img}/>
+                    )
+                })}
+                {/* <BlogCard title='The Top 10 Lofts in  Chicago' image={Blog} /> */}
             </div>
         </section>
     )
