@@ -11,6 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.hero_slider .slick-next{
+  right: 2px !important;
+}
+.hero_slider .slick-prev:before{
+  content: ""
+}
+.hero_slider .slick-next:before{
+  content:""
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
