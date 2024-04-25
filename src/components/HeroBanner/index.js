@@ -27,7 +27,7 @@ const HeroBanner = () => {
                     </div>
                 </div>
             </div>
-            <div className='absolute bottom-0 left-0 right-0'>
+            <div className='absolute bottom-0 left-1/2 transform -translate-x-1/2 '>
                 <BuildingsIcon />
             </div>
         </section>
