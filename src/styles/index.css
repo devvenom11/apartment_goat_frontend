@@ -12,7 +12,7 @@ code {
     monospace;
 }
 .hero_slider .slick-next{
-  right: 2px !important;
+  right: 25px !important;
 }
 .hero_slider .slick-prev:before{
   content: ""
