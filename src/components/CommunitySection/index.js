@@ -20,7 +20,7 @@ const CommunitySection = () => {
             </div>
             <div className='flex'>
                 <div className='flex-1 flex items-end'>
-                    <GoogleRatingCard/>
+                    <GoogleRatingCard />
                 </div>
                 <div className='flex-1'>
                     <p className='text-2xl leading-[36px] font-medium text-[#FEFEFE] mb-[68px]'>
