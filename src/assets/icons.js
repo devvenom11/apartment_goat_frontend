@@ -114,7 +114,7 @@ export const CircleTikTokIcon = ({ width = "48", height = "48" }) => {
   );
 };
 
-export const HeroShockIcon = ({ width = "416", height = "18" }) => {
+export const HeroShockIcon = ({ width = "100%", height = "18" }) => {
   return (
     <svg
       width={width}
@@ -5392,4 +5392,13 @@ export const GoogleIcon = ({ width = "106", height = "33" }) => {
             </defs>
         </svg>
     )
+}
+export const SearchIcon = ({ width = "48", height = "48" }) => {
+  return (
+    <svg width={width} height={height} viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="48" height="48" rx="24" fill="#22223B"/>
+    <circle cx="23.5" cy="23.5" r="9.5" stroke="#FEFEFE" stroke-width="1.5"/>
+    <path d="M30.5 30.5L34 34" stroke="#FEFEFE" stroke-width="1.5" stroke-linecap="round"/>
+    </svg>
+  )
 }
