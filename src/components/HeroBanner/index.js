@@ -4,7 +4,7 @@ import Button from '../common/Button'
 
 const HeroBanner = () => {
     return (
-        <section className='bg-[#F5EEE8] relative'>
+        <section className='bg-[#F5EEE8] relative mb-[142px]'>
             <div className='max-w-[962px] mx-auto pt-[51px] pb-[315px] relative z-10'>
                 <div className='pb-[67px] border-b border-[#989898]'>
                     <h1 className='text-[80px] leading-[88px] font-semibold text-[#22223B] text-center tracking-[0.07em]'>
@@ -22,7 +22,7 @@ const HeroBanner = () => {
                             <input placeholder='Where do you want to live?' className=' placeholder-[#989898] w-full h-full py-2 focus-visible:outline-none' />
                         </div>
                         <div className=''>
-                            <Button classNames={"text-[16px] leading-[19px] font-semibold px-[37px] py-[19px] bg-[#22223B] text-[#FEFEFE] rounded-[99px]"} onClick={undefined}>Search</Button>
+                            <Button icon={undefined} classNames={"text-[16px] leading-[19px] font-semibold px-[37px] py-[19px] bg-[#22223B] text-[#FEFEFE] rounded-[99px]"} onClick={undefined}>Search</Button>
                         </div>
                     </div>
                 </div>
