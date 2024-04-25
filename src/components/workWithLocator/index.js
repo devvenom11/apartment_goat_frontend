@@ -7,21 +7,21 @@ import {ButtonIcon} from "../../assets/icons"
 const WorkwithLocator = () => {
     return (
         <section>
-            <div className='max-w-[1350px] h-[389px] mx-auto bg-[#F5EEE8] rounded-[32px] flex justify-between'>
+            <div className='max-w-[1350px] h-[389px] mx-auto my-[120px]  bg-[#F5EEE8] rounded-[32px] flex justify-between'>
                 <div className='ml-[48px] pt-[42px]'>
                     <p className='text-[35px] font-[600]'>
                         Work with a locator and  earn up to <span className='text-[#FF6525] text-[35px] font-[600]'>$450</span>
                     </p>
-                    <ul className='mt-[16px] mb-[37px]'>
-                        <li className='flex gap-[5px]'><span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <ul className='mt-[16px] mb-[37px] leading-[35.52px] text-[16px] '>
+                        <li className='flex items-center gap-[5px]'><span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5.02232 11.4842L10.075 16.5841L19.0027 7.10739" stroke="#22223B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                         </span>Get a curated list sent to you</li>
-                        <li className='flex gap-[5px]'><span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <li className='flex items-center gap-[5px]'><span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5.02232 11.4842L10.075 16.5841L19.0027 7.10739" stroke="#22223B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                         </span>Get a curated list sent to you</li>
-                        <li className='flex gap-[5px]'><span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <li className='flex items-center gap-[5px]'><span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5.02232 11.4842L10.075 16.5841L19.0027 7.10739" stroke="#22223B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                         </span>Get a curated list sent to you</li>
