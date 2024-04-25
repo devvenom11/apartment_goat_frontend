@@ -51,7 +51,7 @@ const FaqsSection = () => {
   return (
     <section className="">
       <div className="bg-[rgb(186,218,249)] px-[45px]  ">
-        <div className="flex pt-[120px] pb-[110px] justify-between gap-[44px] relative">
+        <div className="flex pt-[120px] pb-[110x] justify-between gap-[44px] relative">
           <div className="max-w-[633px]">
             <h1 className="text-[48px] font-[600] leading-[62.4px] mb-[52px]">
               Curious About Apartment Goats?
@@ -62,15 +62,6 @@ const FaqsSection = () => {
               </span>
               Find Apartments
             </button>
-          </div>
-          <div className="">
-            {Faqs.map((item, idx) => {
-              return (
-                <Accordian key={idx} question={item?.question} answer={item?.answer} />
-              );
-            })}
-          </div>
-          <div className="absolute bottom-0 left-0">
             <svg width="437" height="478" viewBox="0 0 437 478" fill="none" xmlns="http://www.w3.org/2000/svg">
               <mask id="mask0_0_1" style={{ maskType: "luminance" }} maskUnits="userSpaceOnUse" x="50" y="18" width="242" height="492">
                 <path d="M291.262 509.906H50.0039V477.631H112.212V112.482H50.0039V18H291.262C291.262 192.02 291.262 400.51 291.262 509.906Z" fill="white" />
@@ -358,7 +349,13 @@ const FaqsSection = () => {
               <path d="M85.4082 163.037V291.978" stroke="#22223B" stroke-width="3.04" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
               <path d="M85.4082 97.9946V147.631" stroke="#22223B" stroke-width="3.04" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
-
+          </div>
+          <div className="">
+            {Faqs.map((item, idx) => {
+              return (
+                <Accordian key={idx} question={item?.question} answer={item?.answer} />
+              );
+            })}
           </div>
         </div>
       </div>
