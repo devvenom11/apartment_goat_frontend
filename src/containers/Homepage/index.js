@@ -6,6 +6,8 @@ import LocatorSection from '../../components/LocatorSection'
 import FaqsSection from '../../components/FAQsSection'
 import FeatureSection from '../../components/FeatureSection'
 import CommunitySection from '../../components/CommunitySection'
+import BlogSection from '../../components/BlogSection'
+import ApartmentsSection from '../../components/ApartmentsSection'
 
 const Homepage = () => {
     return (
@@ -16,6 +18,8 @@ const Homepage = () => {
                 <FeatureSection />
                 <CommunitySection />
                 <FaqsSection />
+                <BlogSection />
+                <ApartmentsSection />
                 <LocatorSection />
             </Layout>
         </>
