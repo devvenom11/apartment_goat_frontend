@@ -114,7 +114,7 @@ export const CircleTikTokIcon = ({ width = "48", height = "48" }) => {
   );
 };
 
-export const HeroShockIcon = ({ width = "416", height = "18" }) => {
+export const HeroShockIcon = ({ width = "100%", height = "18" }) => {
   return (
     <svg
       width={width}
@@ -5525,6 +5525,15 @@ export const LeasingBuildingIcon = ({width="251",height="528"}) => {
       <circle cx="221.5" cy="105.5" r="9.5" stroke="#FE9264" stroke-width="1.5" />
       <path d="M228.5 112.5L232 116" stroke="#FE9264" stroke-width="1.5" stroke-linecap="round" />
       <path d="M222.75 132.422C222.75 132.007 222.414 131.672 222 131.672C221.586 131.672 221.25 132.007 221.25 132.422H222.75ZM218 201.579C218 203.788 219.791 205.579 222 205.579C224.209 205.579 226 203.788 226 201.579C226 199.369 224.209 197.579 222 197.579C219.791 197.579 218 199.369 218 201.579ZM221.25 132.422V201.579H222.75V132.422H221.25Z" fill="#FE9264" />
+    </svg>
+  )
+}
+export const SearchIcon = ({ width = "48", height = "48" }) => {
+  return (
+    <svg width={width} height={height} viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="48" height="48" rx="24" fill="#22223B"/>
+    <circle cx="23.5" cy="23.5" r="9.5" stroke="#FEFEFE" stroke-width="1.5"/>
+    <path d="M30.5 30.5L34 34" stroke="#FEFEFE" stroke-width="1.5" stroke-linecap="round"/>
     </svg>
   )
 }
