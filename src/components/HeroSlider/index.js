@@ -4,6 +4,7 @@ import { ArrowUpIcon } from '../../assets/icons'
 import Button from '../common/Button'
 import ImageCard from '../common/ImageCard'
 import Lake from "../../assets/landingPage/lake.png"
+import SliderSection from '../common/Slider'
 
 const HeroSlider = () => {
     return (
@@ -14,7 +15,14 @@ const HeroSlider = () => {
                 </HeadingSection>
             </div>
             <div className=''>
-                <ImageCard image={Lake} title={'West Loop'} description={'$450'} />
+                <SliderSection settings={{ dots: false, slidesToShow: 4 }}>
+                    <ImageCard image={Lake} title={'West Loop'} description={'$450'} />
+                    <ImageCard image={Lake} title={'West Loop'} description={'$450'} />
+                    <ImageCard image={Lake} title={'West Loop'} description={'$450'} />
+                    <ImageCard image={Lake} title={'West Loop'} description={'$450'} />
+                    <ImageCard image={Lake} title={'West Loop'} description={'$450'} />
+                    <ImageCard image={Lake} title={'West Loop'} description={'$450'} />
+                </SliderSection>
             </div>
         </section>
     )
