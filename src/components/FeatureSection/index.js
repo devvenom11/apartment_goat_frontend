@@ -8,7 +8,7 @@ const FeatureSection = () => {
     return (
         <section className='px-[45px] mb-[139px]'>
             <div className='mb-[54px]'>
-                <HeadingSection heading={'Explore Chicago’s neighborhoods'}>
+                <HeadingSection heading={'Earn Cash Back On Your Next Lease'}>
                     <p className='text-[48px] leading-[55px] font-semibold text-[#22223B]'>3 easy steps</p>
                 </HeadingSection>
             </div>
