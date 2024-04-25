@@ -7,10 +7,6 @@ import Blog5 from "../../assets/landingPage/Rectangle 19288(5).png"
 import Blog6 from "../../assets/landingPage/Rectangle 19288(6).png"
 import Blog7 from "../../assets/landingPage/Condos.png"
 import Blog8 from "../../assets/landingPage/LoftApartmet.png"
-import Blog9 from "../../assets/landingPage/Rectangle 19288(9).png"
-import Blog10 from "../../assets/landingPage/Rectangle 19288(10).png"
-import Blog11 from "../../assets/landingPage/Rectangle 19288(11).png"
-import Blog12 from "../../assets/landingPage/Rectangle 19288(12).png"
 
  const data=[
   {
