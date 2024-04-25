@@ -8,6 +8,7 @@ import FeatureSection from '../../components/FeatureSection'
 import CommunitySection from '../../components/CommunitySection'
 import BlogSection from '../../components/BlogSection'
 import ApartmentsSection from '../../components/ApartmentsSection'
+import BenefitSection from '../../components/BenefitSection'
 
 const Homepage = () => {
     return (
@@ -17,6 +18,7 @@ const Homepage = () => {
                 <HeroSlider />
                 <FeatureSection />
                 <CommunitySection />
+                <BenefitSection/>
                 <FaqsSection />
                 <BlogSection />
                 <ApartmentsSection />
