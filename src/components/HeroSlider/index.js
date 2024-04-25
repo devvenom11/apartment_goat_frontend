@@ -10,7 +10,7 @@ const HeroSlider = () => {
         <section className="px-[72px] mb-[152px]">
             <div className='mb-[72px]'>
                 <HeadingSection heading={'Explore Chicago’s neighborhoods'}>
-                    <Button icon={<ArrowUpIcon />} classNames={"text-[16px] leading-[19px] font-semibold px-[37px] py-[19px] bg-[#22223B] text-[#FEFEFE] rounded-[99px] flex items-center"} onClick={undefined}>Find apartments</Button>
+                    <Button icon={<ArrowUpIcon />} classNames={"text-[16px] leading-[19px] font-semibold px-[37px] py-[16px] bg-[#22223B] text-[#FEFEFE] rounded-[99px] flex items-center"} onClick={undefined}>Explore More</Button>
                 </HeadingSection>
             </div>
             <div className=''>
