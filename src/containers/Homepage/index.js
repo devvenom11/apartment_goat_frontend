@@ -18,11 +18,11 @@ const Homepage = () => {
                 <HeroSlider />
                 <FeatureSection /> */}
                 <CommunitySection />
-                {/* <BenefitSection/>
+                {/* <BenefitSection />
                 <FaqsSection />
                 <BlogSection />
                 <ApartmentsSection />
-                <LocatorSection /> */}
+                <LocatorSection />  */}
             </Layout>
         </>
     )

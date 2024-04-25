@@ -8,7 +8,7 @@ const AuthorCard = ({ author = "Ben Bryant", image = '' }) => {
                 <div className='mb-1'>
                     <p className='text-[20px] leading-[30px] font-semibold text-[#FEFEFE]'>
                         {author}
-                    </p>
+              </p>
                 </div>
                 <div className=''>
                     <AuthorStartsIcon />
