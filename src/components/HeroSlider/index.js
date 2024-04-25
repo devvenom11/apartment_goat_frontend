@@ -5,6 +5,7 @@ import Button from '../common/Button'
 import ImageCard from '../common/ImageCard'
 import Lake from "../../assets/landingPage/lake.png"
 import SliderSection from '../common/Slider'
+import data from "./data"
 
 const HeroSlider = () => {
     function NextArrow(props) {
@@ -12,7 +13,7 @@ const HeroSlider = () => {
         return (
             <div
                 className={className}
-                style={{ ...style, display: "block"}}
+                style={{ ...style, display: "block" }}
                 onClick={onClick}
             >
                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -80,14 +81,20 @@ const HeroSlider = () => {
                     dots: false,
                     slidesToShow: 4,
                     nextArrow: <NextArrow />,
-                    prevArrow: <PrevArrow />
+                    prevArrow: <PrevArrow />,
+                    infinite:false
                 }}>
+                    {data?.map((item) => {
+                        return (
+                            <ImageCard image={item?.img} title={item?.title} description={item?.price} />
+                        )
+                    })}
+                    {/* <ImageCard image={Lake} title={'West Loop'} description={'$450'} />
                     <ImageCard image={Lake} title={'West Loop'} description={'$450'} />
                     <ImageCard image={Lake} title={'West Loop'} description={'$450'} />
                     <ImageCard image={Lake} title={'West Loop'} description={'$450'} />
                     <ImageCard image={Lake} title={'West Loop'} description={'$450'} />
-                    <ImageCard image={Lake} title={'West Loop'} description={'$450'} />
-                    <ImageCard image={Lake} title={'West Loop'} description={'$450'} />
+                    <ImageCard image={Lake} title={'West Loop'} description={'$450'} /> */}
                 </SliderSection>
             </div>
         </section>
