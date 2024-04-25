@@ -5,6 +5,7 @@ import HeroSlider from '../../components/HeroSlider'
 // import WorkwithLocator from '../../components/workWithLocator'
 import LocatorSection from '../../components/LocatorSection'
 import FaqsSection from '../../components/FAQsSection'
+import FeatureSection from '../../components/FeatureSection'
 
 const Homepage = () => {
     return (
@@ -12,6 +13,7 @@ const Homepage = () => {
             <Layout>
                 <HeroBanner />
                 <HeroSlider />
+                <FeatureSection />
                 <FaqsSection />
                 <LocatorSection />
             </Layout>
