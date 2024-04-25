@@ -1,5 +1,5 @@
 import React from 'react'
-import { LeasingBuildingIcon } from '../../assets/icons'
+import { LeasingBuildingIcon, PerfectHomeBuildingIcon, SimpleLeasingBuildingIcon } from '../../assets/icons'
 
 const BenefitSection = () => {
     return (
@@ -16,7 +16,7 @@ const BenefitSection = () => {
                     </div>
                 </div>
                 <div className='w-[361px] relative rounded-[310px] py-[310.5px] bg-[#22223B]'>
-                    <div className='absolute bottom-0 left-[30%] transform -translate-x-[30%]'>
+                    <div className='absolute bottom-0 left-[50%] transform -translate-x-[50%]'>
                         <LeasingBuildingIcon />
                     </div>
                 </div>
@@ -25,8 +25,8 @@ const BenefitSection = () => {
             <div className='flex justify-between gap-x-[36px] mb-[148px]'>
                 <div className='flex-1'></div>
                 <div className='w-[361px] relative rounded-[310px] py-[310.5px] bg-[#22223B]'>
-                    <div className='absolute bottom-0 left-[30%] transform -translate-x-[30%]'>
-                        <LeasingBuildingIcon />
+                    <div className='absolute bottom-0 left-[50%] transform -translate-x-[50%]'>
+                        <SimpleLeasingBuildingIcon />
                     </div>
                 </div>
                 <div className='flex-1 flex items-center'>
@@ -50,8 +50,8 @@ const BenefitSection = () => {
                     </div>
                 </div>
                 <div className='w-[361px] relative rounded-[310px] py-[310.5px] bg-[#22223B]'>
-                    <div className='absolute bottom-0 left-[30%] transform -translate-x-[30%]'>
-                        <LeasingBuildingIcon />
+                    <div className='absolute bottom-0 left-[50%] transform -translate-x-[50%]'>
+                        <PerfectHomeBuildingIcon />
                     </div>
                 </div>
                 <div className='flex-1'></div>
