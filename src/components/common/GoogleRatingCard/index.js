@@ -5,7 +5,7 @@ const GoogleRatingCard = ({ rating = "4.9" }) => {
     return (
         <figure className='flex gap-x-4 w-fit items-center'>
             <div className=''>
-                <p className='text-[64px] leading-[64px] font-semibold text-[#FEFEFE] relative'>
+                <p className='text-[56px] leading-[56px] md:text-[64px] md:leading-[64px] font-semibold text-[#FEFEFE] relative'>
                     {rating}
                     <span className='absolute -bottom-[15px] left-0'>
                         <svg width="98" height="20" viewBox="0 0 98 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -19,7 +19,7 @@ const GoogleRatingCard = ({ rating = "4.9" }) => {
                     <GoogleIcon />
                 </div>
                 <div className='flex'>
-                    <p className='text-[18px] leading-[18px] text-[#FEFEFE] mr-[6px]'> Reviews 96</p>  <GoogleStarsIcon />
+                    <p className='text-[16px] md:text-[18px] leading-[16px] md:leading-[18px] text-[#FEFEFE] mr-[6px]'> Reviews 96</p>  <GoogleStarsIcon />
                 </div>
             </div>
         </figure>

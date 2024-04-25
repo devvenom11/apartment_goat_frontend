@@ -14,15 +14,15 @@ const Homepage = () => {
     return (
         <>
             <Layout>
-                <HeroBanner />
+                {/* <HeroBanner />
                 <HeroSlider />
-                <FeatureSection />
+                <FeatureSection /> */}
                 <CommunitySection />
-                <BenefitSection />
+                {/* <BenefitSection />
                 <FaqsSection />
                 <BlogSection />
                 <ApartmentsSection />
-                <LocatorSection />
+                <LocatorSection />  */}
             </Layout>
         </>
     )

@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <React.Fragment>
             <footer className='px-4 md:px-[45px] bg-[#FFFFFF] '>
-                <div className='flex  justify-between  md:flex-row md:pt-[56px] md:pb-[92px]  flex-col pb-10 pt-0' >
+                <div className='flex  justify-between  md:flex-row md:pt-[56px] md:pb-[92px]  flex-col pb-10 pt-[120px]' >
                     <div className=''>
                         <Link to={'/'}>
                             {/* Logo width should be set in repsonivness */}
