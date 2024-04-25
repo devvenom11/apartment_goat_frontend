@@ -14,6 +14,7 @@ const BlogSection = () => {
                 </HeadingSection>
             </div>
             <div className='grid grid-cols-4 gap-[15px]'>
+                {}
                 <BlogCard title='The Top 10 Lofts in  Chicago' image={Blog} />
             </div>
         </section>
