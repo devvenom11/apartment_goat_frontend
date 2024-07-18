@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_unit_units",
+  "info": {
+    "displayName": "Unit",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Area": {
+      "type": "string"
+    },
+    "Name": {
+      "type": "string"
+    },
+    "Price": {
+      "type": "string"
+    },
+    "Bed": {
+      "type": "string"
+    },
+    "Bath": {
+      "type": "string"
+    },
+    "Availability": {
+      "type": "string"
+    }
+  }
+}

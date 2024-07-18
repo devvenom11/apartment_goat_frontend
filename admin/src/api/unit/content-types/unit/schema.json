@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "units",
+  "info": {
+    "singularName": "unit",
+    "pluralName": "units",
+    "displayName": "Unit",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Unit_Price": {
+      "type": "integer"
+    },
+    "No_Of_Bathrooms": {
+      "type": "integer"
+    },
+    "Number_Of_Bedrooms": {
+      "type": "integer"
+    },
+    "Unit_Area": {
+      "type": "integer"
+    }
+  }
+}

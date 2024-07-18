@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pet_policies",
+  "info": {
+    "singularName": "pet-policy",
+    "pluralName": "pet-policies",
+    "displayName": "Pet policy",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Pet_Allowed": {
+      "type": "string"
+    },
+    "Pet_Deposite": {
+      "type": "string"
+    },
+    "Limit": {
+      "type": "string"
+    },
+    "Pet_Rent": {
+      "type": "string"
+    },
+    "Restrictions": {
+      "type": "string"
+    },
+    "property": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::property.property",
+      "inversedBy": "pet_policies"
+    }
+  }
+}

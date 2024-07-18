@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "policies",
+  "info": {
+    "singularName": "policy",
+    "pluralName": "policies",
+    "displayName": "Policy",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "property": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::property.property",
+      "inversedBy": "policies"
+    }
+  }
+}

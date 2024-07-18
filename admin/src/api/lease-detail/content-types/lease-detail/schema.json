@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lease_details",
+  "info": {
+    "singularName": "lease-detail",
+    "pluralName": "lease-details",
+    "displayName": "Lease detail",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Minimum_Lease_Term": {
+      "type": "string"
+    },
+    "Application_Fee": {
+      "type": "string"
+    },
+    "Credit_Check": {
+      "type": "string"
+    },
+    "Parking": {
+      "type": "string"
+    },
+    "Utilities": {
+      "type": "string"
+    },
+    "Furniture": {
+      "type": "string"
+    },
+    "property": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::property.property",
+      "inversedBy": "lease_details"
+    }
+  }
+}

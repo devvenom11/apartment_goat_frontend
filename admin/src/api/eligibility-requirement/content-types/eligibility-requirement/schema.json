@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "eligibility_requirements",
+  "info": {
+    "singularName": "eligibility-requirement",
+    "pluralName": "eligibility-requirements",
+    "displayName": "Eligibility Requirement",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "property": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::property.property",
+      "inversedBy": "eligibility_requirements"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "neighborhoods",
+  "info": {
+    "singularName": "neighborhood",
+    "pluralName": "neighborhoods",
+    "displayName": "Neighborhood",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Title"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Price": {
+      "type": "string"
+    }
+  }
+}
