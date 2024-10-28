@@ -1,9 +1,9 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-website/.next
-website/next-env.d.ts
-website/dist
+ .next
+ next-env.d.ts
+ dist
 # dependencies
-website/node_modules
+ node_modules
 admin/node_modules
 /.pnp
 .pnp.js
@@ -16,14 +16,14 @@ admin/node_modules
 
 # misc
 .DS_Store
-website/.env.local
-website/.env.development.local
-website/.env.test.local
-website/.env.production.local
+ .env.local
+ .env.development.local
+ .env.test.local
+ .env.production.local
 
-website/npm-debug.log*
-website/yarn-debug.log*
-website/yarn-error.log*
+ npm-debug.log*
+ yarn-debug.log*
+ yarn-error.log*
 
 build
-./website/build
+./ build
