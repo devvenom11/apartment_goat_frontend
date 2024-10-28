@@ -127,6 +127,7 @@ export default function FindApartment({ slug }) {
       if (!response.ok) {
         throw new Error("Failed to fetch data");
       }
+
       const result = await response.json();
       // setAllProperties(res_all.data);
       setProperties(result.results);
@@ -225,6 +226,12 @@ export default function FindApartment({ slug }) {
   // }, [bedCount]);
 
 
+const uniqueProperties = properties?.filter((property, index, self) => 
+  index === self.findIndex((p) => p.id === property.id)
+);
+
+
+
   return (
     <Main
       loading={loading}
@@ -241,7 +248,7 @@ export default function FindApartment({ slug }) {
       minPrice={minPrice}
       maxPrice={maxPrice}
       propertiesData={filteredProperties}
-      properties={properties}
+      properties={uniqueProperties}
       setBed={setBed}
       setPetToggled={setPetToggled}
       setParkingToggled={setParkingToggled}
