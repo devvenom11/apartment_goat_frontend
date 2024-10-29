@@ -2,7 +2,7 @@ import React from "react";
 import SecondaryButton from "../../common/Button/secondary";
 
 const AboutViceroy = ({data}) => {
-  
+   
   return (
     <section id="about-section"  className="mx-5 mb-8 border-b border-b-border-light pb-9 md:mx-0 md:mb-9 md:pb-[42px] m-auto max-w-screen-2xl">
       <h3 className="mb-5 text-2xl font-bold">About {data?.name}</h3>
