@@ -17,6 +17,12 @@
       "static/chunks/main-app.js",
       "static/css/app/[[...slug]]/page.css",
       "static/chunks/app/[[...slug]]/page.js"
+    ],
+    "/apartment/[slug]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/apartment/[slug]/page.css",
+      "static/chunks/app/apartment/[slug]/page.js"
     ]
   }
 }

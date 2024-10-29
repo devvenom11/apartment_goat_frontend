@@ -27,7 +27,7 @@ export default function FindApartment({ slug }) {
   const [filters, setFilters] = useState({
     // balcony: true,
     // basketballCourt: true,
-    bathCount: '1',
+    bathCount: "1",
     bedroomCount: (bedCount == "studio" ? "0" : bedCount) || "1",
     // den: true,
     // evCharging: true,
@@ -46,14 +46,16 @@ export default function FindApartment({ slug }) {
       laundry: true,
       inUnitLaundry: true,
       hardwoodFloors: true,
-      dishwasher: true
+      dishwasher: true,
     },
   });
- 
+
   async function fetchDataByLatLng() {
     try {
       const cleanedFilters = Object.fromEntries(
-        Object.entries(filters).filter(([_, value]) => value !== undefined && value !== "" && value !== null)
+        Object.entries(filters).filter(
+          ([_, value]) => value !== undefined && value !== "" && value !== null
+        )
       );
 
       const queryParams = new URLSearchParams({
@@ -64,7 +66,7 @@ export default function FindApartment({ slug }) {
         limit: 20,
         ...(minPrice && minPrice !== "0" ? { priceMin: minPrice } : {}),
         ...(maxPrice && maxPrice !== "10000" ? { priceMax: maxPrice } : {}),
-        ...cleanedFilters,  
+        ...cleanedFilters,
       });
       setLoading(true);
       const response = await fetch(`/api/search-geo?${queryParams}`);
@@ -85,14 +87,16 @@ export default function FindApartment({ slug }) {
   async function fetchDataByAmenity() {
     try {
       const cleanedFilters = Object.fromEntries(
-        Object.entries(filters).filter(([_, value]) => value !== undefined && value !== "" && value !== null)
+        Object.entries(filters).filter(
+          ([_, value]) => value !== undefined && value !== "" && value !== null
+        )
       );
       const queryParams = new URLSearchParams({
         amenities: amenities,
         city: "Chicago",
         page,
         limit: 20,
-        ...cleanedFilters,  
+        ...cleanedFilters,
       });
       setLoading(true);
       const response = await fetch(`/api/search-amenity?${queryParams}`);
@@ -113,14 +117,16 @@ export default function FindApartment({ slug }) {
   async function fetchDataByPopularSearch() {
     try {
       const cleanedFilters = Object.fromEntries(
-        Object.entries(filters).filter(([_, value]) => value !== undefined && value !== "" && value !== null)
+        Object.entries(filters).filter(
+          ([_, value]) => value !== undefined && value !== "" && value !== null
+        )
       );
       const queryParams = new URLSearchParams({
         best: searchParamValue,
         city: "Chicago",
         page,
         limit: 20,
-        ...cleanedFilters,  
+        ...cleanedFilters,
       });
       setLoading(true);
       const response = await fetch(`/api/search-best?${queryParams}`);
@@ -142,7 +148,9 @@ export default function FindApartment({ slug }) {
   const fetchDataByNeighborhood = async () => {
     try {
       const cleanedFilters = Object.fromEntries(
-        Object.entries(filters).filter(([_, value]) => value !== undefined && value !== "" && value !== null)
+        Object.entries(filters).filter(
+          ([_, value]) => value !== undefined && value !== "" && value !== null
+        )
       );
       const queryParams = new URLSearchParams({
         neighborhood: convertToCamelCase(slug),
@@ -155,7 +163,7 @@ export default function FindApartment({ slug }) {
       });
       setLoading(true);
       const response = await fetch(`/api/search-neighborhood?${queryParams}`);
-     
+
       if (!response.ok) {
         throw new Error("Failed to fetch data");
       }
@@ -173,7 +181,9 @@ export default function FindApartment({ slug }) {
   const fetchDataByCity = async () => {
     try {
       const cleanedFilters = Object.fromEntries(
-        Object.entries(filters).filter(([_, value]) => value !== undefined && value !== "" && value !== null)
+        Object.entries(filters).filter(
+          ([_, value]) => value !== undefined && value !== "" && value !== null
+        )
       );
       const queryParams = new URLSearchParams({
         city: "Chicago",
@@ -201,23 +211,20 @@ export default function FindApartment({ slug }) {
     }
   };
 
-
   useEffect(() => {
     if (searchParamValue) {
       fetchDataByPopularSearch();
     } else if (amenities) {
       fetchDataByAmenity();
-    } 
-    else if (lat && lng) {
+    } else if (lat && lng) {
       fetchDataByLatLng();
-    }
-     else if (slug === "chicago") {
+    } else if (slug === "chicago") {
       fetchDataByCity();
     } else {
       fetchDataByNeighborhood();
     }
-  }, [lat, lng, filters,minPrice,maxPrice,filters]);
-  
+  }, [lat, lng, filters, minPrice, maxPrice, filters]);
+
   // useEffect(() => {
   //   setFilters((prevFilters) => ({
   //     ...prevFilters,
@@ -225,12 +232,13 @@ export default function FindApartment({ slug }) {
   //   }));
   // }, [bedCount]);
 
-
-const uniqueProperties = properties?.filter((property, index, self) => 
-  index === self.findIndex((p) => p.id === property.id)
-);
-
-
+  const uniqueProperties = properties?.filter((property, index, self) => {
+    const duplicates = self.filter((p) => p.id === property.id);
+    const nonNullPriceItem = duplicates.find((item) => item.price !== null);
+    return nonNullPriceItem
+      ? property === nonNullPriceItem
+      : index === self.findIndex((p) => p.id === property.id);
+  });
 
   return (
     <Main

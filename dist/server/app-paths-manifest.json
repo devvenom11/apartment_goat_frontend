@@ -1,5 +1,8 @@
 {
   "/apartments/[slug]/page": "app/apartments/[slug]/page.js",
+  "/apartment/[slug]/page": "app/apartment/[slug]/page.js",
   "/[[...slug]]/page": "app/[[...slug]]/page.js",
-  "/api/search-geo/route": "app/api/search-geo/route.js"
+  "/api/search-building/route": "app/api/search-building/route.js",
+  "/api/search-geo/route": "app/api/search-geo/route.js",
+  "/api/apartment-detail/[building_id]/[unit_id]/route": "app/api/apartment-detail/[building_id]/[unit_id]/route.js"
 }

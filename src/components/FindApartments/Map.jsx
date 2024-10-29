@@ -49,13 +49,14 @@ export default function Map({ properties, params, lat, lng }) {
       setSelectedMarker(null);
     }
   };
+  
   return (
     <div className=" h-[calc(100vh-60px)]">
       {isLoaded && (
         <GoogleMap
           mapContainerStyle={containerStyle}
           center={center}
-          zoom={16}
+          zoom={8}
           options={{ mapTypeId: "terrain" }}
         >
           {properties?.map((item, index) => {

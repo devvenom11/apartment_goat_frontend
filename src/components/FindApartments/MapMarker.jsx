@@ -1,4 +1,5 @@
 import React from "react";
+import { IMAGE_PATH } from "src/utils/constants";
 
 const MapMarker = ({ handleMarkerClick, item, selectedMarker }) => {
   const isSelected = item?.id === selectedMarker?.id;
@@ -11,13 +12,19 @@ const MapMarker = ({ handleMarkerClick, item, selectedMarker }) => {
       <div
         className={`absolute overflow-hidden rounded-full transition-all duration-200 ease-in group-hover:-top-15 border-[2px]  group-hover:border-brand ${isSelected ? "border-brand -top-15" : "border-brand -top-11"}`}
       >
-        {item?.attributes?.photos?.data?.length>0?<img
-          className={`transition-all duration-200 ease-in group-hover:h-14 group-hover:w-14  ${isSelected ? "w-14 h-14" : "h-11 w-11"}`}
-          src={`${item?.attributes?.photos?.data[0]?.attributes?.url}`}
-          width={56}
-          height={56}
-          alt={item.attributes.name}
-        />:<div className={`transition-all bg-gray-300 duration-200 ease-in group-hover:h-14 group-hover:w-14  ${isSelected ? "w-14 h-14" : "h-11 w-11"}`}/>}
+        {item?.images?.length > 0 ? (
+          <img
+            className={`transition-all duration-200 ease-in group-hover:h-14 group-hover:w-14  ${isSelected ? "w-14 h-14" : "h-11 w-11"}`}
+            src={`${IMAGE_PATH}${item.images?.[0].file}.283x145.webp`}
+            width={56}
+            height={56}
+            alt={item.images?.[0].alt}
+          />
+        ) : (
+          <div
+            className={`transition-all bg-gray-300 duration-200 ease-in group-hover:h-14 group-hover:w-14  ${isSelected ? "w-14 h-14" : "h-11 w-11"}`}
+          />
+        )}
       </div>
       <div className="relative w-full text-grey-dark font-circular text-14px leading-5 font-medium text-grey-dark text-center z-50 inline">
         ${item.price}

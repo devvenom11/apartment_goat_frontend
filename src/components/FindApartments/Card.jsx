@@ -107,6 +107,7 @@ const Card = ({ item, markerCard }) => {
       />
     ),
   };
+  
   return (
     <div
       className={`${markerCard ? "max-w-[285px] min-w-[100%] md:min-w-[295px] drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)] z-50 absolute bottom-5 left-5 rounded-lg" : "rounded-lg"} max-w-[285px] min-w-[100%] md:min-w-[285px] overflow-hidden  border bg-[#FFFFFF] grow md:grow-0  min-h-[320px]`}
