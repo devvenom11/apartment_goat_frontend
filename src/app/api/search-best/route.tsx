@@ -3,12 +3,12 @@ import { NextResponse } from "next/server";
 // The GET method for handling the API request
 export async function GET(req: Request) {
   try {
-    // Extract search parameters from the URL
-    const { searchParams } = new URL(req.url);
-    const search = searchParams.get("best") || "";
-    const city = searchParams.get("city") || "";
-    const page = searchParams.get("page") || "1";
-    const limit = searchParams.get("limit") || "20";
+    // Create a URL object directly from req.url
+    const url = new URL(req.url);
+    const search = url.searchParams.get("best") || "";
+    const city = url.searchParams.get("city") || "";
+    const page = url.searchParams.get("page") || "1";
+    const limit = url.searchParams.get("limit") || "20";
 
     // Log the parameters for debugging
     console.log("Request Parameters:", { city, page, limit });
@@ -45,16 +45,9 @@ export async function GET(req: Request) {
     // Parse and return the successful response
     const data = await response.json();
     if (data.code === 404 && data.message === "No results found") {
-      // If the API returns 404 with "No results found", return an empty array
       return NextResponse.json({ results: [] }, { status: 200 });
     }
-    if (!response.ok) {
-      console.error("External API Error:", data.message);
-      return NextResponse.json(
-        { error: `Failed to fetch data: ${response.statusText}` },
-        { status: response.status }
-      );
-    }
+
     return NextResponse.json(data, { status: 200 });
   } catch (error) {
     // Log the error for debugging
